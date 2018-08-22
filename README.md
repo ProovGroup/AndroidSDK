@@ -1,6 +1,20 @@
 ## Installation
+### ajouter le repo weproov
+```
+allprojects {
+    repositories {
+        ...
+        maven{
+            url "https://proovgroup.github.io/AndroidSDK/"
+        }
+    }
+}
+```
 
+### Dependence
+```
 implementation 'com.ProovGroup.AndroidSDK:AndroidSDK:0.0.11'
+```
 
 ### build.gradle
 Changer la version et activer le dataBinding

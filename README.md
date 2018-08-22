@@ -1,6 +1,6 @@
 ## Installation
 
-Coller le WeProovSdk.aar dans app/libs
+implementation 'com.ProovGroup.AndroidSDK:AndroidSDK:0.0.11'
 
 ### build.gradle
 Changer la version et activer le dataBinding
@@ -18,58 +18,20 @@ android {
 }
 ```
 
-```
-dependencies {
-    ...
-
-    implementation files('libs/WeProovSdk.aar')
-    implementation 'com.android.support:design:27.1.1'
-
-    implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
-    implementation 'com.android.support:design:27.1.1'
-    implementation 'com.android.support:multidex:1.0.3'
-
-    implementation 'com.android.support:support-v4:27.1.1'
-    implementation 'com.android.support:recyclerview-v7:27.1.1'
-    implementation 'com.android.support:gridlayout-v7:27.1.1'
-    implementation 'com.android.support:exifinterface:27.1.1'
-
-    implementation 'com.google.android.gms:play-services-location:15.0.1'
-    implementation 'com.google.android.gms:play-services-gcm:15.0.1'
-    implementation 'com.google.code.gson:gson:2.8.0'
-
-    implementation 'com.github.bumptech.glide:glide:3.8.0'
-
-
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
-    implementation "android.arch.lifecycle:runtime:1.1.0"
-    implementation "android.arch.lifecycle:common-java8:1.1.0"
-    implementation "android.arch.lifecycle:extensions:1.1.0"
-    implementation "android.arch.lifecycle:reactivestreams:1.1.0"
-    annotationProcessor "android.arch.lifecycle:compiler:1.1.0"
-
-    api 'me.dm7.barcodescanner:zxing:1.9.8'
-
-    implementation 'com.squareup.okhttp3:okhttp:3.8.1'
-    implementation 'io.github.lizhangqu:coreprogress:1.0.2'
-}
-```
 ## Permission
 AndroidManifest.xml ajouter les drois
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="...">
     ...
-	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application>
         ...
@@ -121,9 +83,11 @@ pour connecter au backend
     });
 ```
 
-pour ouvire un rapport dans une vue manager
+Pour ouvire un rapport dans une vue manager
 
 ```
+WPParameters params = new WPParameters();
+params.partOptions.put(0, new WPPartOption(false,true));
 startActivity(WPLoadingActivity.getIntent(MainActivity.this, proovCode, params));
 ```
 

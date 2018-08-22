@@ -9,65 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b99399f-9f91-4fe5-97d0-7fe1f7f36c75" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.9/fileChanges/last-build.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.lock" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/weproov/proovgroup/com/androidsdk/ExampleInstrumentedTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/weproov/proovgroup/com/androidsdk/MainActivity.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/weproov/proovgroup/com/androidsdk/ExampleUnitTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/com/github/ProovGroup/AndroidSDK/0.0.6/AndroidSDK-0.0.6-source.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/com/github/ProovGroup/AndroidSDK/0.0.6/AndroidSDK-0.0.6-source.jar.md5" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/com/github/ProovGroup/AndroidSDK/0.0.6/AndroidSDK-0.0.6-source.jar.sha1" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/com/github/ProovGroup/AndroidSDK/0.0.6/AndroidSDK-0.0.6.aar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/com/github/ProovGroup/AndroidSDK/0.0.6/AndroidSDK-0.0.6.aar.md5" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/com/github/ProovGroup/AndroidSDK/0.0.6/AndroidSDK-0.0.6.aar.sha1" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/com/github/ProovGroup/AndroidSDK/0.0.6/AndroidSDK-0.0.6.pom" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/com/github/ProovGroup/AndroidSDK/0.0.6/AndroidSDK-0.0.6.pom.md5" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/com/github/ProovGroup/AndroidSDK/0.0.6/AndroidSDK-0.0.6.pom.sha1" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/com/github/ProovGroup/AndroidSDK/maven-metadata.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/com/github/ProovGroup/AndroidSDK/maven-metadata.xml.md5" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/com/github/ProovGroup/AndroidSDK/maven-metadata.xml.sha1" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gradlew" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/library/WeProovSDK.aar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/library/build.gradle" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" afterPath="" />
-    </list>
+    <list default="true" id="8b99399f-9f91-4fe5-97d0-7fe1f7f36c75" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

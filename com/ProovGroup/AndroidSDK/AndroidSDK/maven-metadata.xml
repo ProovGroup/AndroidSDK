@@ -3,14 +3,10 @@
   <groupId>com.ProovGroup.AndroidSDK</groupId>
   <artifactId>AndroidSDK</artifactId>
   <versioning>
-    <release>0.0.13</release>
+    <release>0.0.14</release>
     <versions>
-      <version>0.0.1</version>
-      <version>0.0.10</version>
-      <version>0.0.11</version>
-      <version>0.0.12</version>
-      <version>0.0.13</version>
+      <version>0.0.14</version>
     </versions>
-    <lastUpdated>20180822143924</lastUpdated>
+    <lastUpdated>20180824075738</lastUpdated>
   </versioning>
 </metadata>

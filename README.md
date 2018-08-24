@@ -97,7 +97,7 @@ pour connecter au backend
     });
 ```
 
-Pour ouvire un rapport dans une vue manager
+Pour ouvrir un rapport dans une vue manager
 
 ```
 WPParameters params = new WPParameters();
@@ -105,4 +105,23 @@ params.partOptions.put(0, new WPPartOption(false,true));
 startActivity(WPLoadingActivity.getIntent(MainActivity.this, proovCode, params));
 ```
 
+Pour écouter les résultats des Activities du SDK, au sein de l'Activity contenant un WPReportFragment ou de l'Activity initialisant une WPReportActivity.
+
+```
+@Override
+public void onActivityResult(int requestCode, int resultCode, Intent data) {
+    if(requestCode == WPReportFragment.REQ_UPLOAD){ 
+        // ... La vue d'upload vient de se fermer, le processus est terminée
+    }
+    else if(requestCode == WPReportFragment.REQ_SIGNATURE){ //La vue de Signature vient de se fermer
+        if (resultCode == RESULT_OK){
+            // ... Signature correctement terminée, l'upload est sur le point de démarrer
+        }
+        else{
+            // ... Retour sans avoir terminé la signature, le rapport peut continuer
+        }
+    }
+    super.onActivityResult(requestCode, resultCode, data); //Important de toujours faire cet appel pour que WPReportFragment reçoive la callback
+}
+```
 

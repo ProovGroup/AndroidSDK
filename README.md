@@ -13,7 +13,7 @@ allprojects {
 
 ### Dependence
 ```
-implementation 'com.ProovGroup.AndroidSDK:AndroidSDK:0.0.11'
+implementation 'com.ProovGroup.AndroidSDK:AndroidSDK:0.0.19'
 ```
 
 ### build.gradle

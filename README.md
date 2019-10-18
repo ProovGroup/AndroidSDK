@@ -48,18 +48,6 @@ In `AndroidManifest.xml` add the required permissions and the WeProov upload ser
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-    <application>
-        ...
-        <service
-            android:name="com.weproov.sdk.WPReportUploadService"
-            android:exported="true"
-            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
-            <intent-filter>
-                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
-            </intent-filter>
-        </service>
-    </application>
 </manifest>
 ```
 

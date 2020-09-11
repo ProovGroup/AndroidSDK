@@ -59,6 +59,19 @@ At the app startup, call to ``WPConfig.init("<languageCode>");`` to initialise t
 WPConfig.init("fr");
 ```
 
+You can force orientation of the report par and photoscan camera.
+
+```
+//0 = sensor (keep sensor orientation)
+//1 = portrait (only works on report)
+//2 = landscape
+
+//Full landscape report
+WPConfig.forcedReportOrientation = 2;
+//Indicate native orientation as landscape
+WPConfig.forceCameraNativeOrientation = 2;
+```
+
 ### Setup your theme
 Change the colors of the theme through the Android resources by overriding the keys used by the SDK. 
 

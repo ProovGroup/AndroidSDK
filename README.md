@@ -72,7 +72,7 @@ WPConfig.forcedReportOrientation = 2;
 WPConfig.forceCameraNativeOrientation = 2;
 ```
 
-Various UI Settongs
+Various UI Settings
 ```
 //Hide loading progress dialog while loading report
 WPConfig.hideLoadingDialog = true;

@@ -72,6 +72,15 @@ WPConfig.forcedReportOrientation = 2;
 WPConfig.forceCameraNativeOrientation = 2;
 ```
 
+Various UI Settongs
+```
+//Hide loading progress dialog while loading report
+WPConfig.hideLoadingDialog = true;
+//Skip upload view and force background upload
+WPParameters parameters = new WPParameters();
+parameters.mustForceBackgroundUpload = true;
+```
+
 ### Setup your theme
 Change the colors of the theme through the Android resources by overriding the keys used by the SDK. 
 

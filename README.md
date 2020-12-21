@@ -56,7 +56,7 @@ In `AndroidManifest.xml` add the required permissions and the WeProov upload ser
 ### SDK initialisation
 At the app startup, call to ``WPConfig.init("<languageCode>");`` to initialise the SDK.
 ```
-WPConfig.init("fr");
+WPConfig.init(<token>, <secret>, "fr")
 ```
 
 You can force orientation of the report par and photoscan camera.
@@ -97,9 +97,10 @@ Change the colors of the theme through the Android resources by overriding the k
 More information on the existing fields and their function later. 
 
 ### Backend connection
-To connect to the backend, call `WPConfig.connect`
+To connect to the backend, call `WPConfig.init` and connect
 ```
-    WPConfig.connect(this, "<token>", "<secret>", new WPConfig.ConnectionListener() {
+    WPConfig.init(<token>, <secret>, "fr")
+    WPConfig.connect(this, "", "", new WPConfig.ConnectionListener() {
         @Override
         public void onError(Exception e) {
             Log.e(TAG", "Error on connect", e);

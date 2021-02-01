@@ -82,7 +82,7 @@ parameters.mustForceBackgroundUpload = true;
 ```
 
 ### Setup your theme
-Change the colors of the theme through the Android resources by overriding the keys used by the SDK. 
+Change the colors of the theme through the Android resources by overriding the keys used by the SDK.
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -94,13 +94,13 @@ Change the colors of the theme through the Android resources by overriding the k
     ...
 </resources>
 ```
-More information on the existing fields and their function later. 
+More information on the existing fields and their function later.
 
 ### Backend connection
 To connect to the backend, call `WPConfig.init` and connect
 ```
     WPConfig.init(<token>, <secret>, "fr")
-    WPConfig.connect(this, "", "", new WPConfig.ConnectionListener() {
+    WPConfig.connect(this, WPConfig.ConnectionListener() {
         @Override
         public void onError(Exception e) {
             Log.e(TAG", "Error on connect", e);
@@ -140,7 +140,7 @@ startActivity(WPLoadingActivity.getIntent(MainActivity.this, proovCode, new WPPa
 If you wish to make your own UI for displaying the progress of the load, or if you wish to display the report in a fragment instead of an activity (see below), you will have to take care of loading the report by yourself.
 
 For this, we provide you with the `WPReportDownloader` class.
-This class offers method to start loading report or template, and livedata to observe the progress of this load. 
+This class offers method to start loading report or template, and livedata to observe the progress of this load.
 Look at the implementation of the `WPReportDownloadingController` for an example of how to use the `WPReportDownloader`.
 
 Once the report is completely loaded, you can start a `WPReportActivity`:
@@ -190,7 +190,7 @@ Some methods of interest in the WPReportViewModel:
 - `WPReportViewModel.goToNextStep()`: display the next page of the report, if any
 - `WPReportViewModel.getNavigationIndexLiveData()`: returns a live data of the current index of the page being displayed
 - `WPReportViewModel.getPageCount()`: returns the number of page in the report
-- `WPReportViewModel.getInvalidCountsLiveData()`: returns the number of invalid fields in each page of the report, and weither or not they should be displayed 
+- `WPReportViewModel.getInvalidCountsLiveData()`: returns the number of invalid fields in each page of the report, and weither or not they should be displayed
 - `WPReportViewModel.signAndFinish()`: if the report is completed, start the signature and upload processes in their own Activities.
 
 ### Receive results from the SDK
@@ -199,7 +199,7 @@ To receive results from the SDK, listen to the `onActivityResult` inside the Act
 ```
 @Override
 public void onActivityResult(int requestCode, int resultCode, Intent data) {
-    if(requestCode == WPReportFragment.REQ_UPLOAD){ 
+    if(requestCode == WPReportFragment.REQ_UPLOAD){
         // ... The upload activity was closed, the process is complete
     }
     else if(requestCode == WPReportFragment.REQ_SIGNATURE){ //The signature Activity was closed
